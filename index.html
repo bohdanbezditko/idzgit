@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>GitHub API</h1>
+    <p class="subtitle">Пошук репозиторіїв користувача GitHub</p>
+
+    <div class="search-box">
+        <input type="text" id="usernameInput" placeholder="Введіть GitHub username">
+        <button id="searchBtn">Знайти</button>
+    </div>
+
+    <div id="error" class="error"></div>
+
+    <div class="content">
+        <div class="repos-block">
+            <h2>Репозиторії</h2>
+            <div id="reposList"></div>
+        </div>
+
+        <div class="details-block">
+            <h2>Дані репозиторію</h2>
+            <div id="repoDetails">
+                <p>Оберіть репозиторій зі списку.</p>
+            </div>
+
+            <h2>Коміти</h2>
+            <div id="commitsList"></div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
